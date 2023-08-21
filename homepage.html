@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <script src="homepage.js" defer></script>
+    <title>Government Loan Assistance Program</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Government Loans</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Loans</a></li>
+                <li><a href="#">Eligibility</a></li>
+                <li><a href="#">Application</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box">
+        <h1>Welcome to the Government Loan Assistance Program</h1> 
+            <p>Empowering your dreams with financial support.</p>
+    </div>
+
+    <section class="hero">
+        <img src="1_1--gOXEpVO9wHpuG5kO3dw.png" alt="Diverse Individuals and Families">
+        <a href="#" class="btn">Apply Now</a>
+    </section>
+    <div class="loan-type">
+        <h1>Select Loan Type</h1>
+        <form action="loan_details.html" method="post">
+            <label for="loanType">Choose Loan Type</label><br><br>
+            <select id="loanType" onchange="navigate()">
+                <option value="">Select Option</option>
+                <option value="homeloan.html">Housing Loan</option>
+                <option value="educationloan.html">Education Loan</option>
+                <option value="businessloan.html">Business Loan</option>
+            </select><br><br>
+            
+            <input type="submit" value="Continue">
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <nav>
+                   <a href="#">Privacy Policy</a>   
+                   <a href="#">Terms of Use</a>   
+                   <a href="#">Accessibility</a>   
+            </nav>
+            <p>&copy; <span id="current-year"></span> Government Loan Assistance Program. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function navigate() {
+            var select = document.getElementById("loanType");
+            var selectedOption = select.options[select.selectedIndex].value;
+            if (selectedOption) {
+                window.location.href = selectedOption;
+            }
+        }
+    </script>
+</body>
+</html>
