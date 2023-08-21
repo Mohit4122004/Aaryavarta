@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Govt Loan Scheme - Login</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Please Register Yourself</h1>
+    <form class="login-form">
+      <input type="text" placeholder="First Name">
+      <input type="text" placeholder="Last Name">
+      <input type="text" placeholder="Occupation">
+      <input type="text" placeholder="Age">
+      <input type="text" placeholder="Yearly Income">
+      <input type="text" placeholder="Mobile Number">
+      <input type="text" placeholder="Address">
+      <input type="button" value="Login" onclick="window.location.href = 'homepage.html'" id="button">
+    </form>
+  </div>
+  <div class="login">
+    <a href="loginform.html">ClicK Here to Login</a>
+  </div>
+</body>
+</html>
